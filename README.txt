@@ -4,6 +4,7 @@ learning order is :
 	placeholder.py
 	matrix_add.py
 	matrix_mul.py
+	y=xW+b.py
 	linear.py
 	logisic.py
 	#max_entropy
