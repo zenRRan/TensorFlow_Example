@@ -1,4 +1,5 @@
 #矩阵相乘
+#matrix product
 
 import tensorflow as tf
 
