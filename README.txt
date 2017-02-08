@@ -6,4 +6,7 @@ learning order is :
 	matrix_mul.py
 	linear.py
 	logisic.py
+	#max_entropy
 	CNN
+
+the max_entropy is loading, please waiting
