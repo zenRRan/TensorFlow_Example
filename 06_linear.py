@@ -12,7 +12,7 @@ b = tf.Variable(tf.random_uniform([1], -1.0, 1.0))
 X = tf.placeholder(tf.float32)
 Y = tf.placeholder(tf.float32)
 
-prediction = W*x_data + b
+prediction = W*X + b
 
 cost = tf.reduce_mean(tf.square(prediction - y_data))
 
