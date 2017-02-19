@@ -59,6 +59,11 @@ init = tf.initialize_all_variables()
 with tf.Session() as sess:
     sess.run(init)
     max_accurcy = .0
+
+    #tensorboard   在终端用命令  $tensorboard --logdir=/tmp/tensorflowlogs  根据提示地址可显示
+    merged = tf.merge_all_summaries()
+    writer = tf.train.SummaryWriter("/tmp/tensorflowlogs", sess.graph)
+
     for step in range(train_steps + 1):
         sess.run(train, feed_dict={input_x: x_train, input_y: y_train})
         cur_accurcy = compute_accurcy(x_dev, y_dev)
